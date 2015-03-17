@@ -1,41 +1,41 @@
 # RestrictedTextField
-Una pequeña libreria para limitar el contenido de un JTextField en Java Swing.
+A small library to limit the content of a JTextField in Java Swing.
 
-### Funciones Generales
+### General Functions
 
-* Limite de caracteres.
-* Permitir la escritura de solo números
-* Permitir la escritura de solo texto
-* Manipular el permiso de ingreso de espacios en blanco
-* Restringir el jTextField al ingreso de caracteres alfanumericos.
-* Caracteres personalizados, permite enviar un arreglo de caracteres para indicar cuales serán aceptados en el campo de texto.
+* Character Limit.
+* Allow writing just numbers
+* Allow writing just text
+* Allow writing just alphanumeric characters
+* Allow writing custom characters
+* Handle permission entry blanks
 
-### Uso
+### Use
 
-Primero que nada es necesario importar la libreria dentro de los paquetes de la clase.
+Import the library within the class packages.
 
 `import Atxy2k.CustomTextField.RestrictedTextField;`
 
-Posteriormente inicializamos el objeto RestrictedTextField que nos permitirá manipular un objeto JTextField
+RestrictedTextField initialize the object that allow us to manipulate a JTextField
 
 `RestrictedTextField restricted = new RestrictedTextField(myjtextfield);`
 
-###Metodos
+###Methods
 
 #### setLimit(Int number)
-Asigna al campo de texto un limite de escritura, por ejemplo, si lo estuvieramos utilizando para un código postal, el limite sería 5. Por defecto el límite del campo de texto es 20 caracteres.
+Assign the text field write a limit, for example, if we were using a zip code, the limit would be 5. By default the text field limit is 20 characters.
 #### setOnlyNums(boolean)
-Limita a que en el campo de texto solo se pueda escribir numeros (no incluye espacios en blanco), por defecto el valor es false.
+Merely in the text field you can type only numbers (not including spaces), the default value is false.
 #### setOnlyText(boolean)
-Limita a que en el campo de texto solo se pueda escribir texto (no incluye espacios en blanco), por defecto el valor es false.
+Merely in the text field only you can type text (not including spaces), the default value is false.
 #### setAcceptSpace(boolean ) 
-Permite los espacios en blanco en el campo de texto, sin importar si alguno de los metodos anteriores se ha ejecutado, por defecto el valor es false.
+Allows the blanks in the text field, regardless of whether any of the above methods has been executed, the default value is false.
 #### setOnlyAlphanumeric(boolean ) 
-Limita a que en el campo de texto solo se pueda escribir caracteres alfanumericos (no incluye espacios en blanco), por defecto el valor es false.
+Merely in the text field can be written only alphanumeric characters (not including spaces), the default value is false.
 #### restore()
-Restablece los valores del campo de texto a los valores por defecto
+Resets the text field defaults
 #### setOnlyCustomCharacters(boolean ) 
-Limita a que en el campo de texto solo se pueda escribir ciertos caracteres que proporcionemos, estos, así mismo, son introducidos en una cadena de texto como segundo parametro del constructor:
+Merely in the text field can be written only certain characters that we provide these, also, are introduced into a text string as the second parameter of the constructor:
 
 `r1 = new RestrictedTextField(campoTexto, "abcde");`
 
