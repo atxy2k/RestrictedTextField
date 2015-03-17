@@ -30,11 +30,11 @@ Limita a que en el campo de texto solo se pueda escribir numeros (no incluye esp
 Limita a que en el campo de texto solo se pueda escribir texto (no incluye espacios en blanco), por defecto el valor es false.
 #### setAcceptSpace(boolean ) 
 Permite los espacios en blanco en el campo de texto, sin importar si alguno de los metodos anteriores se ha ejecutado, por defecto el valor es false.
-#### setOnlyAlphanumeric
+#### setOnlyAlphanumeric(boolean ) 
 Limita a que en el campo de texto solo se pueda escribir caracteres alfanumericos (no incluye espacios en blanco), por defecto el valor es false.
-#### restore
+#### restore()
 Restablece los valores del campo de texto a los valores por defecto
-#### setOnlyCustomCharacters
+#### setOnlyCustomCharacters(boolean ) 
 Limita a que en el campo de texto solo se pueda escribir ciertos caracteres que proporcionemos, estos, así mismo, son introducidos en una cadena de texto como segundo parametro del constructor:
 
 `r1 = new RestrictedTextField(campoTexto, "abcde");`
