@@ -9,6 +9,8 @@
  * http://serprogramador.es
  * http://ivanalvarado.net
  * 
+ * version : 1.0
+ * 
  */
 package Atxy2k.CustomTextField;
 
