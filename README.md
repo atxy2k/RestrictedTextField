@@ -37,28 +37,6 @@ Restablece los valores del campo de texto a los valores por defecto
 #### setOnlyCustomCharacters
 Limita a que en el campo de texto solo se pueda escribir ciertos caracteres que proporcionemos, estos, así mismo, son introducidos en una cadena de texto como segundo parametro del constructor:
 
-`public class PruebaRestrictedTextField extends JFrame{
-    
-    JTextField campoTexto;
-    RestrictedTextField r1;
-    
-    public PruebaRestrictedTextField()
-    {
-        Container contain = getContentPane();
-        contain.setLayout(new FlowLayout());
-        campoTexto = new JTextField(10);
-        contain.add(campoTexto);
-        //Inicializando el RestrictedTextField
-        r1 = new RestrictedTextField(campoTexto, "abcde");
-        r1.setLimit(10);
-    }
-    
-    public static void main(String[] args) {
-        PruebaRestrictedTextField window = new PruebaRestrictedTextField();
-        window.setSize(new Dimension(300, 200));
-        window.setVisible(true);
-    }
-    
-}`
+`r1 = new RestrictedTextField(campoTexto, "abcde");`
 
 
