@@ -142,12 +142,13 @@ public class RestrictedTextField implements KeyListener {
     public class OnlyNumsDocument extends PlainDocument {
 
         @Override
-        public void insertString(int offs, String str, AttributeSet a)
-                throws BadLocationException {
+        public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+            StringBuilder builder = new StringBuilder(str);
+            str = builder.reverse().toString();
             for (int i = 0; i < str.length(); i++) {
                 if (Character.isDigit(str.charAt(i)) || ( acceptSpace==true && Character.isWhitespace(str.charAt(i))))
                 {
-                    super.insertString(offs, str, a);
+                    super.insertString(offs, Character.toString(str.charAt(i)), a);
                 }
             }
             return;
@@ -158,9 +159,11 @@ public class RestrictedTextField implements KeyListener {
 
         @Override
         public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+            StringBuilder builder = new StringBuilder(str);
+            str = builder.reverse().toString();
             for (int i = 0; i < str.length(); i++) {
                 if (Character.isLetter(str.charAt(i)) || ( acceptSpace==true && Character.isWhitespace(str.charAt(i)))) {
-                    super.insertString(offs, str, a);
+                    super.insertString(offs, Character.toString(str.charAt(i)), a);
                 }
             }
             return;
@@ -171,6 +174,8 @@ public class RestrictedTextField implements KeyListener {
 
         @Override
         public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+            StringBuilder builder = new StringBuilder(str);
+            str = builder.reverse().toString();
             for (int i = 0; i < str.length(); i++) {
                 if (Character.isLetterOrDigit(str.charAt(i)) || ( acceptSpace==true && Character.isWhitespace(str.charAt(i)))) {
                     super.insertString(offs, str, a);
@@ -184,6 +189,8 @@ public class RestrictedTextField implements KeyListener {
 
         @Override
         public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+            StringBuilder builder = new StringBuilder(str);
+            str = builder.reverse().toString();
             for (int i = 0; i < str.length(); i++) {
                 if (acceptCharacters.contains(Character.toString(str.charAt(i)).toLowerCase()) || ( acceptSpace==true && Character.isWhitespace(str.charAt(i)))) {
                     super.insertString(offs, str, a);

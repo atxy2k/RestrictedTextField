@@ -20,8 +20,10 @@ public class Window extends javax.swing.JFrame {
     
     public Window() {
         initComponents();
-        RestrictedTextField restricted = new RestrictedTextField(field_output);
-        restricted.setOnlyNums(true);
+        setLocationRelativeTo(null);
+        RestrictedTextField restricted = new RestrictedTextField(field_input);
+        restricted.setOnlyText(true);
+        restricted.setAcceptSpace(true);
     }
 
     /**
@@ -41,6 +43,12 @@ public class Window extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Prueba:");
+
+        field_input.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                field_inputActionPerformed(evt);
+            }
+        });
 
         btn_submit.setText("Send");
         btn_submit.addActionListener(new java.awt.event.ActionListener() {
@@ -82,6 +90,10 @@ public class Window extends javax.swing.JFrame {
     private void btn_submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_submitActionPerformed
         field_output.setText(field_input.getText());
     }//GEN-LAST:event_btn_submitActionPerformed
+
+    private void field_inputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_field_inputActionPerformed
+        this.btn_submitActionPerformed(evt);
+    }//GEN-LAST:event_field_inputActionPerformed
 
     /**
      * @param args the command line arguments
