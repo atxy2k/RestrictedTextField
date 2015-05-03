@@ -1,0 +1,14 @@
+{
+  "name": "RestrictedTextField",
+  "version": "1.0",
+  "homepage": "https://github.com/atxy2k/RestrictedTextField",
+  "authors": [
+    "Ivan Ignacio Alvarado Díaz"
+  ],
+  "description": "Small library to limit behavior JTextField",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "GPL"
+}
