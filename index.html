@@ -1,20 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>RestrictedTextField Library</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<script src="assets/js/jquery-2.1.3.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/angular.min.js"></script>
-</head>
-<body>
-	
-	<div class="container">
-		
-	</div>
-	
-	
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>RestrictedTextField Library</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body id="top">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header"><a href="#index" class="navbar-brand no-click"> RestrictedTextField</a></div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 id="menu" class="title">Menu</h3>
+          <div class="list-group"><a href="#index" class="list-group-item">Home</a><a href="#use" class="list-group-item">Get Started</a><a href="#documentation" class="list-group-item">Documentation</a></div>
+        </div>
+        <div class="col-md-9">
+          <div id="index">
+            <div class="page-header">
+              <h1>RestrictedTextField</h1><small>Small library to limit behavior JTextField in Java</small>
+            </div>
+            <p><strong>RestrictedTextField</strong><span> is a small library inspired in the limited behavior of Swing componen provides, one of the common problems in use the component, it is very complex to manage the content that is being written, that is, there is no way to automatically validate the user to type certain characters we want, unless it is by manual code.</span></p>
+            <p><span>It is for this reason that the </span><strong>RestrictedTextField   </strong><span>library provides an easy way to manipulate the component providing some utility functions that could benefit more than one person.</span></p>
+            <h3>Latest Version (1.0)</h3>
+            <p>The lastest version contain the next functions</p>
+            <ul>
+              <li>Allow limit the jTextField to only accept letters.</li>
+              <li>Allow limit the jTextField to only accept numbers.</li>
+              <li>Allow limit the jTextField to only accept one numbers of characters defined.</li>
+              <li>Allow writing only alphanumeric characters.</li>
+              <li>Allow manage the characters predefined, regardless if it is numeric, letter, or  simultaneous.</li>
+              <li>Allow accept spaces</li>
+            </ul>
+          </div>
+          <div id="use">
+            <div class="page-header">
+              <h1>Get Started</h1>
+            </div>
+            <p> The library use is realy very simple</p>
+            <p class="text-center"><a href="https://github.com/atxy2k/RestrictedTextField/blob/master/dist/Atxy2k.jar?raw=true" target="_blank" class="btn btn-primary download">Download Library</a></p>
+            <h3>Add library to Project</h3>
+            <figure class="text-center"><img src="assets/img/01.png" alt="Import to proyect"></figure>
+            <h3>Import library in your package</h3>
+            <pre>import Atxy2k.CustomTextField.RestrictedTextField;</pre>
+            <h3>Init instances and restrictions</h3>
+            <figure><img src="assets/img/04.png" alt="" style="width:80%;"></figure>
+            <h3>Example Result
+              <figure class="text-center"><img src="assets/img/05.png" alt=""></figure>
+            </h3><a href="#top" class="btn btn-sm btn-primary pull-right">Up</a>
+          </div>
+          <div id="documentation">
+            <div class="page-header">
+              <h1>Documentation</h1>
+            </div>
+            <h3>Methods</h3>
+            <p><strong>RestrictedTextField</strong> library provide some methods to your easy use </p>
+            <h2>setLimit(Int number)</h2>
+            <p>Assign the text field write a limit, for example, if we were using a zip code, the limit would be 5. By default the text field limit is 20 characters.</p>
+            <h2>setOnlyNums(boolean)</h2>
+            <p>Merely in the text field you can type only numbers (not including spaces), the default value is false.</p>
+            <h2>setOnlyText(boolean)</h2>
+            <p>Merely in the text field only you can type text (not including spaces), the default value is false.</p>
+            <h2>setAcceptSpace(boolean )</h2>
+            <p>Allows the blanks in the text field, regardless of whether any of the above methods has been executed, the default value is false</p>
+            <h2>setOnlyAlphanumeric(boolean )</h2>
+            <p>Merely in the text field can be written only alphanumeric characters (not including spaces), the default value is false.</p>
+            <h2>restore()</h2>
+            <p>Resets the jtextfield to default configuration</p>
+            <h2>setOnlyCustomCharacters(boolean )</h2>
+            <p>Merely in the text field can be written only certain characters that we provide these, also, are introduced into a text string as the second parameter of the constructor</p>
+            <pre>r1 = new RestrictedTextField(campoTexto, "abcde");</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container footer">
+      <div class="row">
+        <div class="col-md-12"><a href="#top" class="btn btn-sm btn-primary pull-right">Up</a></div>
+      </div>
+    </div>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

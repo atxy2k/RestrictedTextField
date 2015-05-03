@@ -1,0 +1,40 @@
+body
+{
+	margin-top: 3em !important;
+}
+.container
+{
+	margin-bottom: 5em;
+	z-index: -2 !important;
+}
+.footer
+{
+	margin-bottom: 1em !important;
+}
+
+.download
+{
+	margin: 1em 0;
+}
+.title
+{
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.code
+{
+	font-size: 0.7em;
+}
+.navbar
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+.list-group
+{
+	z-index: -2 !important;
+}

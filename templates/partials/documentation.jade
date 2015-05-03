@@ -1,0 +1,20 @@
+#documentation
+	.page-header
+		h1 Documentation
+	h3 Methods
+	p <strong>RestrictedTextField</strong> library provide some methods to your easy use 
+	h2 setLimit(Int number)
+	p Assign the text field write a limit, for example, if we were using a zip code, the limit would be 5. By default the text field limit is 20 characters.
+	h2 setOnlyNums(boolean)
+	p Merely in the text field you can type only numbers (not including spaces), the default value is false.
+	h2 setOnlyText(boolean)
+	p Merely in the text field only you can type text (not including spaces), the default value is false.
+	h2 setAcceptSpace(boolean )
+	p Allows the blanks in the text field, regardless of whether any of the above methods has been executed, the default value is false
+	h2 setOnlyAlphanumeric(boolean )
+	p Merely in the text field can be written only alphanumeric characters (not including spaces), the default value is false.
+	h2 restore()
+	p Resets the jtextfield to default configuration
+	h2 setOnlyCustomCharacters(boolean )
+	p Merely in the text field can be written only certain characters that we provide these, also, are introduced into a text string as the second parameter of the constructor
+	pre r1 = new RestrictedTextField(campoTexto, "abcde");
