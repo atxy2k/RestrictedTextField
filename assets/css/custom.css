@@ -1,6 +1,6 @@
 body
 {
-	margin-top: 3em !important;
+	margin-top: 4em !important;
 }
 .container
 {
@@ -23,6 +23,10 @@ body
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+.uppercase
+{
+	text-transform: uppercase;
+}
 .code
 {
 	font-size: 0.7em;
@@ -38,3 +42,70 @@ body
 {
 	z-index: -2 !important;
 }
+.social-me
+{
+	margin: 0 0 1em 0;
+	padding: 0;
+	text-align: center;
+}
+.social-me li
+{
+	display: inline-block;
+}
+.social-me li a
+{
+	padding: 3px 10px;
+}
+.social-me li #facebook
+{
+	color: #46629e;
+}
+.social-me li #twitter
+{
+	color: #62c8f8;
+}
+.social-me li #linkedin
+{
+	color: #0077b5;
+}
+.social-me li #google
+{
+	color: #dd4b39;
+}
+.social-shares
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.social-shares li
+{
+	display: inline-block;
+}
+.social-shares li a
+{
+	display: block;
+	padding: 5px 10px;
+	border-radius: 50%;
+	background-color: #bebebe;
+	color: white;
+}
+.social-shares li #twitter
+{
+	background-color: #62c8f8 !important;
+}
+.social-shares li #linkedin
+{
+	background-color: #0077b5 !important;
+}
+.social-shares li #facebook
+{
+	padding: 5px 12px;
+	background-color: #46629e !important;
+}
+.margin-top-20
+{
+	margin-top: 20px;
+}
+
+

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:title" content="RestrictedTextField">
+    <meta property="og:site_name" content="RestrictedTextField">
+    <meta property="og:description" content="Small library to limit behavior JTextField in Java">
     <title>RestrictedTextField Library</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
@@ -19,8 +22,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <h3 id="menu" class="title">Menu</h3>
+          <div class="col-md-12 autor">
+            <h5 class="text-center">About Author</h5>
+            <figure style="width:50%;margin: 0 auto;"><img src="https://pbs.twimg.com/profile_images/561944123989454848/s4X-q68F_400x400.jpeg" class="img-responsive img-thumbnail avatar"></figure>
+            <p class="margin-top-20 text-center"> Engineering and Jr. Programmer, HTML 5, CSS3, JavaScript, PHP, Python, Java, Android Developer , friend and father.</p>
+            <h5 class="text-center uppercase">Social</h5>
+            <ul class="social-me">
+              <li><a id="facebook" href="https://www.facebook.com/atxy2k" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a id="twitter" href="https://twitter.com/atxy2k" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a id="linkedin" href="https://mx.linkedin.com/pub/iván-ignacio-alvarado-díaz/a5/288/2ba" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a id="google" href="https://plus.google.com/u/0/+IvanAlvaradoDiaz/about" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+          <h3 id="menu" class="title">Content</h3>
           <div class="list-group"><a href="#index" class="list-group-item">Home</a><a href="#use" class="list-group-item">Get Started</a><a href="#documentation" class="list-group-item">Documentation</a></div>
+          <div class="col-md-12">
+            <h5 class="text-center uppercase">Share In</h5>
+            <ul class="social-shares">
+              <li><a id="facebook" href="javascript: void(0);" onclick="window.open('http://www.facebook.com/sharer.php?u=http://atxy2k.github.io/RestrictedTextField','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');" target="_blank" class="social"><i class="fa fa-facebook"></i></a></li>
+              <li><a id="twitter" href="javascript: void();" onclick="window.open('https://twitter.com/intent/tweet?url=http://atxy2k.github.io/RestrictedTextField&amp;text=RestrictedTextField','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');" target="_blank" class="social"><i class="fa fa-twitter"></i></a></li>
+              <li><a id="linkedin" href="javascript: void();" target="_blank" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http://atxy2k.github.io/RestrictedTextField&amp;title=RestrictedTextField','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');" class="social"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-9">
           <div id="index">
